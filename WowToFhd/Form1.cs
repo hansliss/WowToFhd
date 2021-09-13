@@ -142,7 +142,7 @@ namespace WowToFhd
                                     {
                                         // Note that the Sparkmaker Original keeps the bitmap rotated 90
                                         // degrees compared to what you might expect
-                                        int pos = x * orgHeight + y;
+                                        int pos = (orgWidth - x - 1) * orgHeight + y;
                                         int offs = pos / 8;
 
                                         // Also, the Sparkmaker keeps the individual pixels in reverse order
