@@ -266,6 +266,10 @@ namespace WowToFhd
                         GC.WaitForPendingFinalizers();
                     }
                 }
+                if (strind > 0)
+                {
+                    outfile.Write(strbuf, 0, strind);
+                }
             }
             label3.Text = "Done.";
         }
